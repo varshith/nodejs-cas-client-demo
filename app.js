@@ -7,7 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cas = require('connect-cas');
 
-cas.configure({ 'host': 'cas-server:8080', 'protocol': 'http',
+cas.configure({ 'host': 'localhost:8080/cas', 'protocol': 'http',
 paths: {
         validate: '/validate',
         serviceValidate: '/p3/serviceValidate', // CAS 3.0

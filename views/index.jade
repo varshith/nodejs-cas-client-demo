@@ -5,9 +5,12 @@ block content
     li(class="active")
       a(href="/index")="You are on the /index page"
     li
-      a(href="/protected/index")="Call the /protected/index page"
+      a(href="/protected/index")="CAS protected page"
     li
-      a(href="http://cas-server:8080/logout?service=http://localhost:3000")="Call the CAS logout"
+      a(href="/logout")="Logout"
+  h2 Welcome 
   h3
-    p User: #{user}
-    p Attributes: #{attributes}
+    p 
+      pre User: #{user}
+    p
+      pre Attributes: #{attributes}
